@@ -13,7 +13,7 @@ class ResultTimeConversion {
         // Write your code here
         int hours=Integer.parseInt(s.substring(0,2));
         String timeFormat=s.substring(8,10);
-        String newTime;
+        String newTime ;
         if(hours==12 && timeFormat.equals("AM")){
             newTime="00:"+s.substring(3,8);
         }else if(hours!=12 && timeFormat.equals("AM")){
