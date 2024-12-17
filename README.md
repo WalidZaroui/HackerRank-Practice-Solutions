@@ -93,7 +93,7 @@ Contributions are welcome! If you have alternative solutions or optimizations, f
 
 
 
----
+
 
 ## **Icons and Acknowledgments**
 
