@@ -1,14 +1,4 @@
 import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.function.*;
-import java.util.regex.*;
-import java.util.stream.*;
-import static java.util.stream.Collectors.joining;
-import static java.util.stream.Collectors.toList;
 
 class ResultTimeConversion {
 
@@ -23,7 +13,7 @@ class ResultTimeConversion {
         // Write your code here
         int hours=Integer.parseInt(s.substring(0,2));
         String timeFormat=s.substring(8,10);
-        String newTime="";
+        String newTime;
         if(hours==12 && timeFormat.equals("AM")){
             newTime="00:"+s.substring(3,8);
         }else if(hours!=12 && timeFormat.equals("AM")){
@@ -31,8 +21,8 @@ class ResultTimeConversion {
         }else if(hours==12 && timeFormat.equals("PM")){
             newTime=s.substring(0,8);
         }else{
-            int updatedHour = hours+12;
-            newTime=Integer.toString(updatedHour)+":"+s.substring(3,8);
+            String updatedHour = Integer.toString(hours+12);
+            newTime=updatedHour+":"+s.substring(3,8);
         }
         System.out.println(newTime);
         return newTime;
