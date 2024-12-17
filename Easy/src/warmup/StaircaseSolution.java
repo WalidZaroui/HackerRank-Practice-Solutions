@@ -1,3 +1,5 @@
+package warmup;
+
 import java.io.*;
 
 class ResultStaircase {
